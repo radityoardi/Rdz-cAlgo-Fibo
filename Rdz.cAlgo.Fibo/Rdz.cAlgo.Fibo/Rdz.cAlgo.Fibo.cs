@@ -4,11 +4,12 @@ using cAlgo.API;
 using cAlgo.API.Indicators;
 using cAlgo.API.Internals;
 using cAlgo.Indicators;
+using Rdz.cAlgo.Library;
 
-namespace cAlgo
+namespace Rdz.cAlgo.Fibo
 {
     [Robot(TimeZone = TimeZones.UTC, AccessRights = AccessRights.None)]
-    public class NewcBot : Robot
+    public partial class FibocBot : RdzRobot
     {
         [Parameter(DefaultValue = 0.0)]
         public double Parameter { get; set; }
